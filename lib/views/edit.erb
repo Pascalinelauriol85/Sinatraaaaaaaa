@@ -1,12 +1,16 @@
 <html>
   
   <head>
-    <title>The TH Potin a modifier</title>
+    <title>Potin a modifier</title>
   </head>
   
    <body>
     <h1>Potin à modifier</h1>
+
+    <p><%= gossip[0].author %> : <%= gossip[0].content %></p><hr/><br/>
+
     <p>En avant !!!</p>
+
     <form action='/gossips/<%=params['id']%>/edit' method='POST'>
       Balance ton nouveau nom : <input type='text' name='gossip_author_new'/><br/>
       Balance ton nouveau potin : <input type='text' name='gossip_content_new'/><br/>

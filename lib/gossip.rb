@@ -1,21 +1,22 @@
-
+# Cette classe me sert a réaliser toutes les méthodes 
 class Gossip
 
   attr_accessor :author, :content
 
-# j'initialise mes mes variables  
+# j'initialise mes variables  
   def initialize(author, content) 
     @author = author
     @content = content
   end
 
-# méthode pour sauvegarder, on crée un tableau   
+# méthode pour sauvegarder, on crée un tableau avec le nom de la personne et son potin  
   def save
     CSV.open("./db/gossip.csv", "ab") do |csv|
       csv << [author , content]
     end
   end
 
+  # Je rassemble la totalité des nom et potins dans le hash all_gossips
   def self.all
     all_gossips = []
     CSV.read("./db/gossip.csv").each do |csv_line|
@@ -24,6 +25,7 @@ class Gossip
     return all_gossips
   end
 
+  # je pars à la recherche de l'index demande dans l'url par exemple le gossip 2
   def self.find(id)
     gossip = []
     CSV.read("./db/gossip.csv").each_with_index  do |csv_line,index|
@@ -35,6 +37,7 @@ class Gossip
     return gossip
   end
 
+  # Je met le nouveau gossip dans le tableau et je remet tous les autres dans le tableau et je met le nouveau tableau dans csv
   def self.update(id,author,content)
     gossips=[]
     CSV.read('./db/gossip.csv').each_with_index do |csv_line, index|

@@ -1,7 +1,9 @@
+
+
 <html>
   
   <head>
-    <title>The TH Pottins</title>
+    <title>Pottins</title>
   </head>
   
   <body>
@@ -9,7 +11,7 @@
     <h1>PAGE POTIN</h1>
     <h3>Voici la page du potin n°<%=params['id']%></h3>
     <p>Son auteur : <%= gossip[0].author.capitalize%></p>
-    <p>Le contenu du potin : <%= gossip[0].content.capitalize%></p>
+    <p>Le contenu du potin : <%= gossip[0].content.capitalize%></p><br/> 
     <button><a href='http://localhost:4567/gossips/<%=params['id']%>/edit/'> Pour éditer un potin</a><button>
        
     <a href='http://localhost:4567/'>Lien pour revenir à la page des potins</a>
