@@ -1,0 +1,21 @@
+<html>
+  
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+
+        <% gossips.each_with_index do |gossip, index| %>
+
+        <strong> Gossip n° <%= index+1 %> : </strong>
+       
+        <p><%= gossip.author %> : <%= gossip.content %></p><hr/><br/>
+                 
+        
+        <% end %>
+
+  </body>
+  
+</html>
