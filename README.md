@@ -1,8 +1,10 @@
 
 ##Projet : Une application en Sinatra
   
+J'ai réussi d'afficher la totalité des gossips, d'afficher le potin sélectionné et de modifier ce dernièer. Cependant il me manque les commentaires.
 
-Aujourd'hui, nous allons te demander de faire The Gossip Project en Sinatra. Grosso modo, tu vas refaire cette application, mais dans les views, au lieu d'avoir puts et gets.chomp, tu auras du code HTML. Fini le terminal tout moche, on passe à une application web toute belle qu'il ne resterait qu'à mettre en production sur un serveur 😇 Merveilleux, n'est-ce pas ?
+#Cours THP :
+Nous allons te demander de faire The Gossip Project en Sinatra. Grosso modo, tu vas refaire cette application, mais dans les views, au lieu d'avoir puts et gets.chomp, tu auras du code HTML. Fini le terminal tout moche, on passe à une application web toute belle qu'il ne resterait qu'à mettre en production sur un serveur 😇 Merveilleux, n'est-ce pas ?
 
 Pour ceux qui ont la mémoire courte, voici le pitch de The Gossip Project.
 => The Hacking Project est une chouette formation, où la communauté est reine. Il se passe plein de choses à Paris, Lyon, Montpellier, Bordeaux et c'est dur de connaître tous les ragots. Nous allons donc créer une application où tout le monde va pouvoir ajouter des potins sur ses camarades moussaillons.
